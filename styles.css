@@ -1,0 +1,352 @@
+/* Author: Shehan Seneviratne
+Date: 22 01 2024
+Version: 1.0 Assignment 2
+*/
+
+/*
+COLOURS
+#211d1c - DARK BROWN 
+#ADD8E6 - LIGHT BLUE
+*/
+
+/*GLOBAL SETTING
+----------------------------------------
+*/
+
+/*IMPORT OPENSANS FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+body {
+	font-size: 16px;
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif; /*BACKUP FONT IS SANS-SERIF*/
+	color: black;
+	margin: 0;
+}
+
+#wrapper {
+	position: relative;
+	width: 1200px; 
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 3em;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 1.6em;
+	font-weight: 700;
+}
+
+a {
+	color: blue; /* blue */
+}
+
+a:visited {
+	color: blueviolet; /* blue */
+}
+
+
+
+/* HEADER
+----------------------------------------
+*/
+
+header {
+	background: #ADD8E6 /*LIGHT BLUE*/	url(images/classS12-ella-preset.jpg);
+    width: 1200px;
+	height: 600px;
+	color: #ffffff;	/*white*/
+}
+
+/*HIDE THE VISISBILITY OF THE HEADER */
+header h1 {
+	visibility: hidden;
+}
+
+/*ADJUSTS THE LOGO*/
+header img {
+	position: relative;
+	top: 20px; left: 20px;
+	z-index: 999;
+}
+
+/* NAVIGATION
+----------------------------------------
+*/
+
+nav {
+	background-color: rgba(0,0,0,0.55);
+	position: absolute;
+	top: 0px; left: 0px;
+	width: 100%; /* = 1200px */
+	padding-top: 45px;
+}
+
+/*ADJUSTS THE NAVIGATION LINKS*/
+nav a {
+	color: white; /* WHITE */
+	text-decoration: none;
+	padding: 10px 20px 15px 20px;
+}
+
+nav a:hover {
+	background-color: black;
+}
+
+nav a:visited {
+	color: white;
+}
+
+nav ul {
+	padding-left: 450px;
+    padding-bottom: 10px;
+	list-style: none;
+    
+}
+
+nav li {
+	display: inline;
+    font-size: 1.2em;
+}
+
+nav span {
+    padding: 10px 20px 15px 20px;
+	background-color: black; /*BLACK*/
+    color: #ffffff; /*WHITE*/
+}
+
+
+/* CONTENT 1
+----------------------------------------
+*/
+
+/*CLASS ID CREATED TO MODIFY THE INTRODUCTION IN CONTENT AREA 1 OF HOMEPAGE*/
+#intro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #ADD8E6; /*LIGHT BLUE*/
+    color: black;
+    padding: 20px;
+    height: 400px;
+    font-size: 1.2em;
+    justify-content:center
+}
+
+#intro-content {
+    padding: 85px;
+    background-color: rgba(0,0,0,0.18);
+}
+
+#intro h2 {
+    color: black;
+}
+
+/*CONTENT AREA OF RAIL MAP-PAGE*/
+#map-container {
+    display: flex;
+    flex-direction: row; 
+}
+
+#map-container section{
+    background-color: #ADD8E6; /*LIGHT BLUE*/
+    color: black;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+#map-container section h2{
+    font-size: 1.9em;
+    color: black;
+}
+
+#section-one {
+    margin-right: 20px;  
+}
+
+/*CONTENT AREA OF TIMETABLE PAGE*/
+
+.time-table {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.time-table section {
+    width: 500px;
+    padding: 35px;
+    margin: 20px;
+    background-color: #ADD8E6; /*LIGHT BLUE*/
+}
+
+#section-four {
+    width: 350px;
+    padding: 40px;
+    margin: 40px;
+}
+
+#section-five {
+    width: 350px;
+    padding: 40px;
+    margin: 40px;
+}
+
+#centre-mod {
+    text-align: center;
+    color: black;
+    font-size: 2em;
+}
+/* CONTENT 2
+----------------------------------------
+*/
+
+/*CLASS ID CREATED TO MODIFY THE SECTIONS IN CONTENT AREA 2 IN HOMEPAGE*/
+#guidance {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    text-align: center;
+    background: url(images/classS12-ella-preset.jpg);
+    height: 420px;
+    padding: 60px 0px;
+    
+}
+
+/*DESCEDENT SELECTOR TO MODIFY EACH SECTION IN HOMEPAGE*/
+#guidance section {
+    width: 250px;
+    height: 230px;
+    padding: 60px 20px;
+    margin: 30px;
+    color: white;
+    background-color: rgba(0,0,0,0.65);
+    font-size: 1.1em;
+}
+
+/*MODIFICATIONS ON LINKS IN SECTIONS IN CONTENT AREA 2 HOMEPAGE*/
+#guidance section a {
+   color: white; /*WHITE*/
+   text-decoration: none;
+}
+
+#guidance section a:visited {
+    color: white;  /*WHITE*/
+    text-decoration: none;
+}
+
+
+#guidance section a:hover {
+    text-decoration:underline;
+} 
+
+#video-content {
+    padding-left: 150px;
+    padding-bottom: 100px;
+    padding-top: 10px;
+    background-color:  #ADD8E6; /*LIGHT BLUE*/
+}
+
+/* TICKETS
+----------------------------------------
+*/
+#body-adjustments {
+    padding-bottom: 50px;
+    font-size: 1.1em;
+}
+
+.ticket-section {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 30px;
+    background-color: #ADD8E6; /*LIGHT BLUE*/
+}
+
+.para-adjustment {
+    padding: 70px;
+}
+
+
+
+/* ABOUT US PAGE
+----------------------------------------
+*/
+#aboutus-container  {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 70px;
+    margin-left: 10px;
+}
+
+#aboutus-verticle {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    margin: 10px;
+    background-color: #ADD8E6; /*LIGHT BLUE*/
+}
+
+
+/* COMPARTMENTS
+----------------------------------------
+*/
+
+.compartments-section {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    background-color: #ADD8E6; /*LIGHT BLUE*/
+}
+
+.img-adjustments {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.img-adjustments img {
+    margin-right: 10px; /*ADJUST THE MARGINS*/
+}
+
+.compartment-para {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#article-adjustment {
+    padding-bottom: 60px;
+}
+/* FOOTER
+----------------------------------------
+*/
+
+footer {
+	background-color: rgba(0,0,0,0.45);
+    color: white;
+	position: absolute;
+	bottom: 0px; 
+	width: 100%; /* = 1200px */
+	padding: 1px;
+}
+
+#footer-container{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#footer-container a {
+    color: white;
+}
+
+#footer-container a:visited {
+    color: white;
+}
